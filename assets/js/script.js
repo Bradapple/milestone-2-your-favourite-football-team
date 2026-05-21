@@ -42,4 +42,7 @@ document.getElementById('team-select').addEventListener('change', function (e) {
     }
 });
 
-
+document.getElementById('clear-btn').addEventListener('click', function () {
+    document.getElementById('team-info').innerHTML = "";
+    document.getElementById('team-select').value = "";
+});
