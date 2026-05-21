@@ -14,8 +14,8 @@ document.getElementById('teamSelect').addEventListener('change', function (e) {
             return response.json();
         })
         .then(function(data) {
-            // Show the result on the page
-            document.getElementById('team-info').textContent = data.name;
+            //document.getElementById('team-info').textContent = data.name;
+            console.log(data);
         })
         .catch(function(error) {
             console.log('Error:', error);
