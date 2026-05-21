@@ -29,5 +29,7 @@ document.getElementById('team-select').addEventListener('change', function (e) {
                     <p><strong>Capacity:</strong> ${venue.capacity.toLocaleString()}</p>`
             })
             .catch(err => console.error(err));
+    } else {
+        document.getElementById('team-info').innerHTML = "";
     }
 });
