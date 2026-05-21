@@ -1,0 +1,28 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+
+@media (min-width: 768px) {
+  #hero {
+    background-position: 50% 40%;
+    height: 40vh;
+  }
+}
+
+@media (min-width: 2560px) {
+  #hero {
+    background-position: 50% 40%;
+    height: 50vh;
+  }
+}
