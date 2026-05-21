@@ -34,7 +34,7 @@ document.getElementById('team-select').addEventListener('change', function (e) {
                         <p><strong>Stadium:</strong> ${venue.name}</p>
                         <p><strong>City:</strong> ${venue.city}</p>
                         <p><strong>Capacity:</strong> ${venue.capacity.toLocaleString()}</p>
-                    </div>`
+                    </div>`;
             })
             .catch(err => console.error(err));
     } else {
