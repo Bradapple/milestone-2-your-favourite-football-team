@@ -1,6 +1,6 @@
 const token = "b7b67f23aa9d47668593cf5535f5db24";
 
-document.getElementById('teamSelect').addEventListener('change', function (e) {
+document.getElementById('team-select').addEventListener('change', function (e) {
     const teamId = e.target.value;
 
     if (teamId !== "") {
