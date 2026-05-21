@@ -15,18 +15,26 @@ document.getElementById('team-select').addEventListener('change', function (e) {
                 const team = data.response[0].team;
                 const venue = data.response[0].venue;
                 console.log(data);
-                
-                
-                document.getElementById('team-info').innerHTML = `
-                    <h2>${team.name}</h2>
-                    <img src="${team.logo}" width="100">
-                    <p><strong>Founded:</strong> ${team.founded}</p>
-                    <p><strong>Country:</strong> ${team.country}</p>
 
-                    <h3>${venue.name}</h3>
-                    <img src="${venue.image}" width="200">
-                    <p><strong>City:</strong> ${venue.city}</p>
-                    <p><strong>Capacity:</strong> ${venue.capacity.toLocaleString()}</p>`
+
+                document.getElementById('team-info').innerHTML = `
+                    <div class="team-header">
+                        <img src="${team.logo}" alt="${team.name} logo">
+                        <h2>${team.name}</h2>
+                    </div>
+
+                    <div class="team-info">
+                        <p><strong>Founded:</strong> ${team.founded}</p>
+                        <p><strong>Country:</strong> ${team.country}</p>
+                    </div>
+
+                    <img class="venue-img" src="${venue.image}" alt="${venue.name}">
+
+                    <div class="team-info">
+                        <p><strong>Stadium:</strong> ${venue.name}</p>
+                        <p><strong>City:</strong> ${venue.city}</p>
+                        <p><strong>Capacity:</strong> ${venue.capacity.toLocaleString()}</p>
+                    </div>`
             })
             .catch(err => console.error(err));
     } else {
