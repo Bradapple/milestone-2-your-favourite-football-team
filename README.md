@@ -139,6 +139,13 @@ The largest function contains 4 statements, while the median contains 2.
 
 The most complex function has a cyclomatic complexity value of 2, while the median complexity is 1.
 
+
+### W3 Validator
+![alt validation screenshot](<assets/images/w3 validator.png>)
+
+### CSS Validator
+![alt css validator screenshot](<assets/images/css validator.png>)
+
 ## 🐞 Known Issues
 
 - API key must be exposed in the front-end (RapidAPI allows this, but it cannot be fully hidden).
