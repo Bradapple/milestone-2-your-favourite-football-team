@@ -41,3 +41,5 @@ document.getElementById('team-select').addEventListener('change', function (e) {
         document.getElementById('team-info').innerHTML = "";
     }
 });
+
+

@@ -12,6 +12,48 @@ main {
   flex: 1;
 }
 
+#team-card {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  font-family: "Segoe UI", Arial, sans-serif;
+  opacity: 0;
+}
+
+#team-card.show {
+  opacity: 1;
+}
+
+.team-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.team-header img {
+  width: 90px;
+  height: 90px;
+}
+
+.team-header h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.venue-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.team-info p {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
 
 @media (min-width: 768px) {
   
